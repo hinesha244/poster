@@ -1,0 +1,102 @@
+:root{
+    --font-style: 'nunito sans',sans-serif;
+}
+*{
+    box-sizing: border-box;
+  }
+  body{
+   
+    font-family: var(--font-style);
+    background-repeat: no-repeat;
+    size:cover;
+    height: 100%;
+    width: 100%;
+    background: #000;
+  }
+  .login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%,-50%);
+    background:transparent;
+    opacity: 1;
+    box-shadow: 0 15px 25px rgb(255, 90, 214);
+    border-radius: 10px;
+    background-image: url(bu8tterfly.gif);
+  }
+  .login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #7cece3;
+    text-align: center;
+    text-shadow: 3px 3px 3px rgb(0, 60, 255);
+  }
+  .login-box .user-box input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:#7cece3;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid#fff;
+    outline: none;
+    background: transparent;
+    text-shadow: 3px 3px 3px rgb(255, 0, 170);
+  }
+  .login-box .user-box label{
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding: 10px 0;
+    font-size: 16px;
+    color:#7cece3;
+    pointer-events: none;
+    transition: .5s;
+    text-shadow: 3px 3px 3px 3PX rgb(255, 0, 170);
+  }
+  .login-box .user-box input:focus~label,
+  .login-box .user-box input:valid~label{
+    top: -85px;
+    left: 0;
+    color:#7cece3;
+    font-size: 12px;
+  }
+  #submit{
+    padding: 10px 20px;
+    color: #cbbddb;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid#ec7ce3;
+    margin: auto;
+  }
+  #submit:hover{
+      background: #ec7cab;
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #ec7cd4, 0 0 25px #ec7cb9, 0 0 50px #ec7cd9, 0 0 100px #ec7cdd;
+  }
+  .button-form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  #register{
+    font-size: 14px;
+    text-decoration: none;
+    color: #ff0000;
+    margin: auto;
+    width: 60%;
+    text-align: center;
+  }
+  #register a{
+    margin: auto;
+    color:#7cece3;
+    text-decoration: none;      
+  }
